@@ -22,6 +22,12 @@ def del_account(account):
     '''
     account.delete_account()
     
+def display_account():
+    '''
+    returns all saved accounts
+    '''
+    return User.display_account()
+    
     
 
 def main():
@@ -47,6 +53,9 @@ def main():
             print('\n')
             print(f"new Account {username} {password} created")
             print('\n')
+            
+        elif short_code == 'da':
+            
      
     
         
