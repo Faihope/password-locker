@@ -9,8 +9,8 @@ class Credentials:
     user_credentials = []
     
 def __init__(self,save_username,save_password):
-    self.save_username = ""
-    self.save_password = ""
+    self.save_username = save_username
+    self.save_password = save_password
     
     
 def save_credentials(self):
