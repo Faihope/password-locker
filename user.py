@@ -9,12 +9,16 @@ class User:
         self.username = username
         self.password = password
         
-    def save_user(self):
+    def save_account(self):
         '''
-        save_user method saves a new user objects to the user list
+        save_account method saves a new user objects to the user list
         '''
         User.user_list.append(self)
         
       
        
-    
+    def delete_account(self):
+        '''
+        deletes saved account
+        '''
+        User.user_list.remove(self)

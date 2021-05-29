@@ -9,11 +9,18 @@ def create_accounts(username,password):
     new_account = User(username,password)
     return new_account
 
+   #save contacts
 def save_accounts(account):
     '''
     method to save the user account
     '''
     account.save_account()
+    
+def del_account(account):
+    '''
+    funcion to delete account
+    '''
+    account.delete_contact()
     
     
 
