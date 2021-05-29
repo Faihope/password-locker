@@ -38,7 +38,7 @@ def main():
     print('\n')
     
     while True:
-        print("Use these short codes: ca - create a new account,da - display account, fa - find contact, ex - exit password locker,del - delete account")
+        print("Use these short codes: ca - create a new account,da - display account,lg - login to account, ex - exit password locker,del - delete account")
         short_code = input().lower()
         # print('\n')
         
@@ -67,6 +67,12 @@ def main():
                 print('\n')
                 print("You dont seem to have any account saved yet")
                 print('\n')
+                
+        elif short_code == 'ex':
+            print("Thank you for choosing password locker....byeee")
+            break
+        else:print("I really didnt get that.Please use the short codes")
+            
                 
             
             
