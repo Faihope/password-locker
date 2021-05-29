@@ -19,3 +19,4 @@ def save_credentials(self):
     '''
     
     User.user_credentials.append(self)
+    

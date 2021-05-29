@@ -20,7 +20,7 @@ def del_account(account):
     '''
     funcion to delete account
     '''
-    account.delete_contact()
+    account.delete_account()
     
     
 
@@ -30,8 +30,26 @@ def main():
     
     print(f"Hello {username}. What would you like to do?")
     print('\n')
-  
+    
+    while True:
+        print("Use these short codes: ca - create a new account,da - display account, fa - find contact, ex - exit password locker,del - delete account")
+        short_code = input().lower()
+        # print('\n')
+        
+        if short_code == 'ca':
+            print("New User")
+            username =input()
+            
+            print("New password")
+            password = input()
+            
+            save_accounts(create_accounts(username,password))
+            print('\n')
+            print(f"new Account {username} {password} created")
+            print('\n')
+     
     
         
         
-main()        
+if __name__=='__main__':
+    main()      

@@ -3,12 +3,19 @@ class User:
     class that generates new instace of user
     '''
     
-    user_list = []
+    
     
     def __init__(self,username,password):
+        '''
+        creates properties of instance of user class
+        '''
+        
         self.username = username
         self.password = password
         
+    user_list = []
+        
+       
     def save_account(self):
         '''
         save_account method saves a new user objects to the user list
