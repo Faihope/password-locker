@@ -55,10 +55,23 @@ def main():
             print('\n')
             
         elif short_code == 'da':
+            if display_account():
+                print("Here is a list of all your accounts and passwords")
+                print('\n')
+                
+                for account in display_account():
+                    print(f"{account.username} {account.password}")
+                    print('\n')
+                    
+            else:
+                print('\n')
+                print("You dont seem to have any account saved yet")
+                print('\n')
+                
+            
             
      
     
-        
         
 if __name__=='__main__':
     main()      
