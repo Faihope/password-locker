@@ -69,6 +69,25 @@ def main():
             print(f"new Account {username}  with password {password} created")
             print('\n')
             
+        elif short_code =='lg':
+            print("Welcome,Proceed to login")
+            print("username")
+            entered_username = input()
+            
+            print("Your password")
+            entered_password = input()
+            
+            while entered_username != username or entered_password != password:
+                  print("Invalid username or password")
+                  print("username")
+                  username = input()
+                  
+                  print("password")
+                  password = input()
+            else:
+                print("\n")
+                print("login successfull")
+            
         elif short_code == 'da':
             if display_account():
                 print("Here is a list of all your accounts and passwords")
