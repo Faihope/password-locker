@@ -42,7 +42,17 @@ class TestUser(unittest.TestCase):
         returns the list of all saved accounts
         '''
         self.assertEqual(User.display_account(),User.user_list)    
-        
+    
+    def test_delete_account(self):
+         '''
+         to test if we can remove contact from our list
+         '''
+         self.new_user.save_account()
+         test_user = User('test','1234')#new account
+         test_user.save_account()
+         
+         self.new_account.delete_account()
+         self.assertEqual(len(User.user_list),1)   
     
         
     

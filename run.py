@@ -126,9 +126,8 @@ def main():
             print("I sure hope you know what you are doing")
             print('\n')  
              
-            # save_accounts(del_account(account))  
-            # print('\n') 
-            # print("Your account has been deleted successfully") 
+            # save_accounts(del_account(username))  
+            print("Your account has been deleted successfully") 
             
             
                 
