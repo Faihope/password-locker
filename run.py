@@ -69,7 +69,7 @@ def main():
             print(f"new Account {username}  with password {password} created")
             print('\n')
             
-        elif short_code =='lg':
+       
             print("Welcome,Proceed to login")
             print("username")
             entered_username = input()
@@ -87,6 +87,27 @@ def main():
             else:
                 print("\n")
                 print("login successfull")
+                
+        elif short_code =='lg':
+            print("Welcome")
+            print("Enter username")
+            default_username = input()
+            print("Enter password")
+            default_password = input()
+            print("\n")
+            
+            while default_username != 'newuser' or default_password != '12345':
+                print("Wrong username or password use username newuser and password 12345 to login")
+                print("\n")
+                
+                print("Enter Username")
+                default_username =input()
+                
+                print("Enter password")
+                default_password = input()
+                
+            else:
+                print('Login success')
             
         elif short_code == 'da':
             if display_account():
