@@ -43,15 +43,30 @@ def main():
         # print('\n')
         
         if short_code == 'ca':
-            print("New User")
+            print("Create Your Username")
             username =input()
             
-            print("New password")
+            print("Create password")
             password = input()
+            # print("New account")
+            
+            print('Confirm password')
+            confirm_password =input()
+            
+            while confirm_password !=password:
+                print("Passwords did not match")
+                print("Enter your password")
+                password = input()
+                print("confirm password")
+                confirm_password = input()
+                
+            else:
+                print(f"Congratulations {username} your account has been created successfully")
+                print("\n")
             
             save_accounts(create_accounts(username,password))
             print('\n')
-            print(f"new Account {username} {password} created")
+            print(f"new Account {username}  with password {password} created")
             print('\n')
             
         elif short_code == 'da':
@@ -67,6 +82,16 @@ def main():
                 print('\n')
                 print("You dont seem to have any account saved yet")
                 print('\n')
+        elif short_code == 'del':
+            print("I sure hope you know what you are doing")
+            print('\n')  
+             
+            # save_accounts(del_account(account))  
+            # print('\n') 
+            # print("Your account has been deleted successfully") 
+            
+            
+                
                 
         elif short_code == 'ex':
             print("Thank you for choosing password locker....byeee")
