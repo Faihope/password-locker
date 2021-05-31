@@ -25,15 +25,7 @@ Use this command to clone `$ git clone https://github.com/Faihope/password-locke
  __Enjoy :)__
 ### Technologies Used
 Python
-Git
-### Behaviours
-| Behaviour                                  Input      |                                         Output |
-| ------------------------------------  :-------------: | ---------------------------------------------: |
-|select cc | username ,password and confirm password.   |Account created successfully                    |
-|select da | da                                         |Displays accounts that have been saved          |
-|select lg | username and password                      |login successfull                               |  
-|select del| username                                   |Account deleted succesfully                     |
-|select ex | ex                                         |Thany you for choosing password locker          |
+Git       |
 
 ### License
 This project is under the  [MIT](license) licence
