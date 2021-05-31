@@ -31,7 +31,7 @@ def display_account():
     
 
 def main():
-    print("Hello welcome to Your password locker.What is your name?")
+    print("Hi there, welcome to Your password locker.What is your name?")
     username = input()
     
     print(f"Hello {username}. What would you like to do?")
@@ -126,7 +126,7 @@ def main():
             print("I sure hope you know what you are doing")
             print('\n')  
              
-            # save_accounts(del_account(username))  
+            # del_account(username) 
             print("Your account has been deleted successfully") 
             
             
@@ -137,10 +137,6 @@ def main():
             break
         else:print("I really didnt get that.Please use the short codes")
             
-                
-            
-            
-     
     
         
 if __name__=='__main__':

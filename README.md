@@ -3,7 +3,17 @@
 Faith Chepngetich.
 ## Description
 Its a website that allows users to create accounts,view their accounts,save their accounts and passwords as well as delete accounts
+### User stories
+create account
+save account
+display account
+login to the account
+del the account
 ### Prerequisites
+You need to have python3.8 
+To install python3.8 in terminal, run the following commands.
+apt-get install python3.8
+apt-get install pip3
 You need to have git installed
 You can install it with the following command in your terminal
 `$ sudo apt install git-all`
@@ -16,7 +26,14 @@ Use this command to clone `$ git clone https://github.com/Faihope/password-locke
 ### Technologies Used
 Python
 Git
-### Live Site
-View [live](https://faihope.github.io/Github-App/)
+### Behaviours
+| Behaviour                                  Input      |                                         Output |
+| ------------------------------------  :-------------: | ---------------------------------------------: |
+|select cc | username ,password and confirm password.   |Account created successfully                    |
+|select da | da                                         |Displays accounts that have been saved          |
+|select lg | username and password                      |login successfull                               |  
+|select del| username                                   |Account deleted succesfully                     |
+|select ex | ex                                         |Thany you for choosing password locker          |
+
 ### License
 This project is under the  [MIT](license) licence
