@@ -16,11 +16,11 @@ def save_accounts(account):
     '''
     account.save_account()
     
-def del_account(account):
-    '''
-    funcion to delete account
-    '''
-    account.delete_account()
+# def delete_account(account):
+#     '''
+#     funcion to delete account
+#     '''
+#     account.delete_account(account)
     
 def display_account():
     '''
@@ -114,7 +114,7 @@ def main():
                 print("Here is a list of all your accounts and passwords")
                 print('\n')
                 
-                for account in display_account():
+                for account in save_accounts():
                     print(f"{account.username} {account.password}")
                     print('\n')
                     
@@ -123,14 +123,12 @@ def main():
                 print("You dont seem to have any account saved yet")
                 print('\n')
         elif short_code == 'del':
-            print("I sure hope you know what you are doing")
-            print('\n')  
-             
-            # del_account(username) 
-            print("Your account has been deleted successfully") 
+            print('Enter the username to delete')
+            username = input()
             
-            
-                
+            User.delete_account(username)
+            print(f"Your account {username} has been deleted successfully") 
+               
                 
         elif short_code == 'ex':
             print("Thank you for choosing password locker....byeee")

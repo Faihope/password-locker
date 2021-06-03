@@ -21,15 +21,15 @@ class TestUser(unittest.TestCase):
         test case to test if the object is initialized properly
         '''
         
-        self.assertEqual(self.new_user.username,'faith')
-        self.assertEqual(self.new_user,'password')
+        self.assertTrue(self.new_user.username,'faith')
+        self.assertTrue(self.new_user,'password')
         
     def test_save_accounts(self):
         '''
         to test if the account is saved
         '''
         self.new_user.save_account()
-        self.assertEqual(len(User.user_list))
+        self.assertEqual(len(User.user_list),1)
         
     def tearDown(self):
         '''
@@ -51,9 +51,11 @@ class TestUser(unittest.TestCase):
          test_user = User('test','1234')#new account
          test_user.save_account()
          
-         self.new_account.delete_account()
+         self.new_user.delete_account()
          self.assertEqual(len(User.user_list),1)   
-    
+
+if __name__ == '__main__':
+    unittest.main()    
         
     
         
